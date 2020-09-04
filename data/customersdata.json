@@ -1,0 +1,17 @@
+[
+    {
+        "accountNumber": "100-980-0001",
+        "customerName": "Selamawit",
+        "accountType": "Checking"
+    },
+    {
+        "accountNumber": "100-980-0003",
+        "customerName": "Shibru",
+        "accountType": "Saving"
+    },
+    {
+        "accountNumber": "100-980-0002",
+        "customerName": "Selamawit Shibru",
+        "accountType": "Loan"
+    }
+]

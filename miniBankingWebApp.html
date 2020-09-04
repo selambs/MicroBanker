@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/cerulean/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LV/SIoc08vbV9CCeAwiz7RJZMI5YntsH8rGov0Y2nysmepqMWVvJqds6y0RaxIXT" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script> -->
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script defer src="js/miniBankingWebApp.js"></script>
+    <link rel="stylesheet" href="css/miniBankingWebApp.css">
+    <title>Mini Banking Web App</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">CS318::: Mini Banking App Project</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <form class="col-sm-5" id="bankForm">
+            <fieldset>
+                <div class="container"><br>
+                    <h3>Bank Account Form</h3>
+
+                    <div id="postData">
+                        <fieldset>
+
+                            <div class="form-group">
+                                <label for="accountNumber">Account Number</label>
+                                <input type="text" class="form-control" id="accountNumber"
+                                    pattern="100-[0-9]{3}-[0-9]{4}" placeholder="100-XXX-XXXX" required />
+                                <small class="form-text text-muted">Your unique account number.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Customer Name</label><br>
+                                <input type="text" class="form-control" id="name" placeholder="e.g. John B. Smith"
+                                    required />
+                            </div>
+                            <div class="form-group">
+                                <label for="typeOfAccount">Type of Account</label>
+                                <select class="form-control" id="typeOfAccount">
+                                    <option hidden disabled selected value>Choose Account Type</option>
+                                    <option>Checking</option>
+                                    <option>Saving</option>
+                                    <option>Loan</option>
+                                </select>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div>
+                                <button type="submit" class="btn btn-primary" id="newAccount">Create New
+                                    Account</button>
+                            </div>
+                        </fieldset><br>
+                    </div>
+                    <fieldset>
+                        <div>
+                            <label id="listOfAccount" class="form-control" id="lableColor">List of customer Accounts</label>
+                            <p id="accountList"></p>
+                        </div>
+                    </fieldset>
+                </div>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <span> Selamawit :::CS318-SPA </span>
+            <span style="float: right;"> &copy;December 2019 </span>
+        </div>
+    </footer>
+
+</body>
+
+</html>

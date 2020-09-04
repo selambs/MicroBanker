@@ -1,0 +1,28 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 35px;
+    background-color:rgb(233, 232, 230);
+    color: black;
+    font-size: 18px;
+    
+}
+.col-sm-5{
+  width: 500px;
+  margin: auto;
+ 
+}
+#listOfAccount{
+  background-color:rgb(35, 166, 218);
+  color: white;
+}
+#accountList{
+  font-size: 18px;
+}
+#bankForm,header,footer{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#lableColor{
+  color:rgb(228, 36, 36);
+}
